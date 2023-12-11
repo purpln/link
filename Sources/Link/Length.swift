@@ -1,4 +1,4 @@
-struct Length {
+struct Length: Equatable {
     var scheme: Int = 0
     var login: Int = 0
     var password: Int = 0

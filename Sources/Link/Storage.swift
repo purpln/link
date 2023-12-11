@@ -1,4 +1,4 @@
-struct Storage {
+struct Storage: Equatable {
     var value: String
     var length: Length
     

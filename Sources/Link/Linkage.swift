@@ -11,6 +11,12 @@ public struct Linkage {
     }
 }
 
+extension Linkage: Equatable {
+    public static func == (lhs: Linkage, rhs: Linkage) -> Bool {
+        lhs.storage.value == rhs.storage.value
+    }
+}
+
 extension Linkage: CustomStringConvertible {
     public var description: String {
         return storage.value
